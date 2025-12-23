@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Link to Telegram Groups</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="telegram-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.45 3.8-1.58 4.59-1.86 5.1-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z" />
+        </svg>
+      </div>
+      <h1>Post link to Telegram Groups</h1>
+    </div>
+
+    <div class="form-group">
+      <label for="urlField">URL:</label>
+      <input type="text" id="urlField" readonly placeholder="Loading URL...">
+    </div>
+
+    <div class="form-group">
+      <label for="groupSelect">Select Group:</label>
+      <select id="groupSelect">
+        <option value="">Select Group</option>
+        <option value="0">बोधि वार्ता सत्संग</option>
+        <option value="1">Pure Experiences</option>
+        <option value="2">Tantra Bodhi तंत्र बोधि</option>
+        <option value="3">Spiritual Singularity</option>
+        <option value="4">शून्य बोधिसत्व</option>
+        <option value="5">ज्ञान तृष्णा सत्संग</option>
+        <option value="6">ज्ञानदीक्षा मराठी सत्संग</option>
+        <option value="7">आत्मबोध सत्संग</option>
+        <option value="8">bottest</option>
+      </select>
+    </div>
+
+    <button id="postBtn" class="post-btn">
+      <span class="btn-text">Post</span>
+      <span class="btn-loader hidden"></span>
+    </button>
+
+    <div id="result" class="result hidden"></div>
+
+    <button id="helpBtn" class="help-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
+      </svg>
+      Help
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

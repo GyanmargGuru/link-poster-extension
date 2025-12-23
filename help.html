@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Link Poster for Telegram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .telegram-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 30px rgba(42, 171, 238, 0.4);
+        }
+
+        .telegram-icon svg {
+            width: 48px;
+            height: 48px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #2AABEE, #68d391);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #a0aec0;
+            font-size: 16px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2AABEE;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        p {
+            color: #cbd5e0;
+            margin-bottom: 12px;
+        }
+
+        ol,
+        ul {
+            color: #cbd5e0;
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background: rgba(42, 171, 238, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #2AABEE;
+            font-weight: 500;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #2AABEE 0%, #229ED9 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .tip {
+            background: rgba(72, 187, 120, 0.15);
+            border-left: 4px solid #68d391;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 16px;
+        }
+
+        .tip-title {
+            color: #68d391;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #718096;
+            font-size: 14px;
+        }
+
+        a {
+            color: #68d391;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="telegram-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.45 3.8-1.58 4.59-1.86 5.1-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z" />
+                </svg>
+            </div>
+            <h1>Link Poster for Telegram</h1>
+            <p class="subtitle">Quick & easy link sharing to your Telegram groups</p>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+                How to Use
+            </h2>
+            <ul>
+                <li>
+                    <span class="step-number">1</span>
+                    <strong>Right-click on any link</strong> on a webpage to see the option <span class="highlight">Post
+                        this link to Telegram</span>
+                </li>
+                <li>
+                    <span class="step-number">2</span>
+                    <strong>Right-click anywhere else</strong> on a page to see <span class="highlight">Post page URL to
+                        Telegram</span>
+                </li>
+                <li>
+                    <span class="step-number">3</span>
+                    A popup will appear showing the URL and a <strong>group selector</strong>
+                </li>
+                <li>
+                    <span class="step-number">4</span>
+                    Select your target group and click <span class="highlight">Post</span>
+                </li>
+            </ul>
+            <div class="tip">
+                <div class="tip-title">💡 Pro Tip</div>
+                <p style="margin: 0;">You can also click the extension icon in your toolbar to post the current page URL
+                    directly!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+                </svg>
+                Configuration
+            </h2>
+            <p>The extension posts links to a Telegram Groups related to (<code>gyanmarg.guru</code>)</p>
+            <p><strong>To Enable:</strong></p>
+            <ul>
+                <li>First join the <strong>Telegram Group</strong> given in the list</li>
+                <li>Login to <a href="https://gyanmarg.guru" target="_blank">gyanmarg.guru</a> as usual using your email.</li>
+                <li>If you are already logged in, there is no need to login again.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
+                </svg>
+                Troubleshooting
+            </h2>
+            <ul>
+                <li><strong>"Could not connect to server"</strong> — Check that gyanmarg.guru is accessible</li>
+                <li><strong>"Not Logged In"</strong> — Login to gyanmarg.guru and try again.</li>
+                <li><strong>"Failed to post"</strong> — Try again later</li>
+                <li><strong>Context menu not showing</strong> — Try reloading the extension from chrome://extensions</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <!-- <a href="javascript:window.close()" class="back-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                </svg>
+                Close Help
+            </a> -->
+            <p style="margin-top: 20px;">Open Source Project : <a href="https://github.com/GyanmargGuru" target="_blank">Gyanmarg @ Github</a></p>
+            <p style="margin-top: 20px;">Link Poster for Telegram Ver 1.0 2025 By <a href="https://gyanmarg.guru" target="_blank">Gyanmarg Portal Services</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
